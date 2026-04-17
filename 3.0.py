@@ -53,7 +53,7 @@ angle = 0
 speed = 0
 max_speed = 5
 acceleration = 0.1
-friction = 0.25
+friction = 0.10
 steering = 4
 running = True
 while running:

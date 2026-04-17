@@ -22,7 +22,8 @@ while menu:
         menu = False
     if game_state == "MENU" or "MENU" in game_state:
         # 1. Define the button area
-        button_rect = pygame.Rect(300, 250, 200, 50)
+        button_rect = pygame.Rect(300, 250, 150, 50)
+        button2 = pygame.Rect(600, 250, 150, 50)
         # 2. Get mouse data
         mouse_pos = pygame.mouse.get_pos()
         mouse_click = pygame.mouse.get_pressed()
@@ -33,10 +34,21 @@ while menu:
             if mouse_click[0]: # 0 is Left Click
                 click = True
                 menu  = False
-                game_state = "RACE"
+                game_state = "RACE_TRACK1"
+            
         else:         
             color = (150, 0, 0) # Dark red
         pygame.draw.rect(screen, color, button_rect)
+        if button2.collidepoint(mouse_pos):
+            color2 = (0,0,200)
+            if mouse_click[0]:
+                click = True
+                menu  = False
+                game_state = "RACE_TRACK2"
+        else:
+            color2 = (0,0,150)
+        pygame.draw.rect(screen, color2, button2 )
+
     pygame.display.flip()
     clock.tick(60)
 # Kart 
@@ -57,27 +69,14 @@ friction = 0.10
 steering = 4
 running = True
 while running:
-    screen.fill((50, 150, 50)) # Grass background
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
     keys = pygame.key.get_pressed()
     if keys[pygame.K_x]:
         running = False
-    if game_state == "MENU":
-        # 1. Define the button area
-        button_rect = pygame.Rect(300, 250, 200, 50)
-        # 2. Get mouse data
-        mouse_pos = pygame.mouse.get_pos()
-        mouse_click = pygame.mouse.get_pressed()
-
-        # 3. Logic: Is the mouse hovering?
-        if button_rect.collidepoint(mouse_pos):
-            color = (200, 0, 0) # Lighter red on hover
-            if mouse_click[0]: # 0 is Left Click
-                click = True
-        else: color = (150, 0, 0) # Dark red
-    if click:
+    if click and "RACE_TRACK1" in game_state:
+        screen.fill((50, 150, 50)) # Grass background
 
         #track
         pygame.draw.ellipse(screen,(100, 100, 100), (10-2, 50, 300, 600))
@@ -86,6 +85,10 @@ while running:
         pygame.draw.ellipse(screen,(100, 100, 100), (795-3, 50, 300, 600))
         pygame.draw.rect(screen,(50,150,50), (190-7, 150 , 700,400 ))
         #pygame.draw.ellipse(screen, (50, 150, 50), [150, 150, 800, 400])
+        pygame.draw.rect(screen, (255, 255, 255), [400, 50, 40, 100])
+    elif click and "RACE_TRACK2" in game_state:
+        pygame.draw.ellipse(screen,(100, 100, 100), (50, 50, 900, 500))
+        pygame.draw.ellipse(screen, (50, 150, 50), [150, 150, 700, 300])
         pygame.draw.rect(screen, (255, 255, 255), [400, 50, 40, 100])
     # Use Trigonometry to move in the direction the kart is facing
     radians = math.radians(angle)

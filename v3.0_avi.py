@@ -121,24 +121,17 @@ while running:
     new_rect = rotated_kart.get_rect(center=(x, y))
     screen.blit(rotated_kart, new_rect.topleft)
     display_speed = speed
-    pygame.display.flip()
-    clock.tick(60)
     # Inside your main loop:
+   
     try:
-        # Check the color of the pixel at the kart's position
         current_color = screen.get_at((int(x), int(y)))
-        print(current_color)
-    
-    # If the color is Green (Grass), slow the kart down significantly
-        if str((50, 150, 50)) in str(current_color): # Match your grass color
-            max_speed = 1.5  # Penalize for off-roading
+        if current_color == (50, 150, 50, 255):
+            max_speed = 1.5
         else:
-            max_speed = 5.0  # Full speed on the track
+            max_speed = 5.0
     except IndexError:
-        # If the kart goes off the screen, reset it
         x, y = 400, 100
         speed = 0
-
         #speedmeter
     display_speed = int(round(((abs(speed))*20), 2)) 
     speed_text = arial_font.render(f"{display_speed} KPH", True, (255, 255, 0))

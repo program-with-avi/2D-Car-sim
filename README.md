@@ -10,7 +10,7 @@ To install [Python](https://www.python.org) go to python's official website for 
 After completing the [installation of python](https://www.python.org/downloads/), open your command prompt (cmd or powershell in Windows, terminal in Mac/Linux) and type ```pip install pygame``` (if that doesn't work use ```pip install pygame-ce```).  
 ## Running the game  
 After you have completed the [installation of Python](https://www.python.org/downloads/) and have library installed, now you can run the game.  
-1. Duplicate this repositry or just download the latest version folder  
+1. Duplicate this repository or just download the latest version folder  
 2. Now open the ```.py``` file and run it.  
 3. Congrats you have successfully launched the game!
 ### Using the game  

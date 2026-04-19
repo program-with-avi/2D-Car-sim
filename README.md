@@ -16,4 +16,10 @@ After you have completed the [installation of Python](https://www.python.org/dow
 ### Using the game  
 - Use keys ```W, S, D, A ``` to control the movement of the car.  
 - Use the key ```X``` to exit the game  
-- Use the key ```esc``` to go back to track selection  
+- Use the key ```esc``` to go back to track selection
+## Credits  
+This game's concept and program was developed by [@progarm-with-avi](https://github.com/program-with-avi/) and [@advedyt](https://github.com/advedyt)  
+Graphics by @evillarybean  
+## Note  
+```This game is still under development``` feel free to give any suggestions.  
+Thank you for playing!

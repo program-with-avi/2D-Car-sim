@@ -22,7 +22,8 @@ This game's concept and program was developed by [@progarm-with-avi](https://git
 Game concept: @tanushpillai123  
 Graphics by @evillarybean aka. sree  
 ## Notes📓  
-```This game is still under development``` feel free to give any suggestions.  
-You can use this repository as template to make your own improved version.  
-Not every version has the same features discussed above.  
+> [!NOTE]
+>```This game is still under development``` feel free to give any suggestions.  
+> You can use this repository as template to make your own improved version.  
+> Not every version has the same features discussed above.  
 Thank you for playing!

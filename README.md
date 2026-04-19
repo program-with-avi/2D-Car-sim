@@ -1,4 +1,4 @@
-# go-kart-pygame  
+# 2D Car-sim  
 This is a 2D car simulator where you can drift or just roam around the world (and maybe do some donuts).  
 The game has two track options and two car options, you can select anyone.  
 This game was entirely developed using [Python](https://www.python.org/) language.  
@@ -24,4 +24,5 @@ Graphics by @evillarybean aka. sree
 ## Note  
 ```This game is still under development``` feel free to give any suggestions.  
 You can use this repository as template to make your own improved version.  
+Not every version has the same features discussed above.  
 Thank you for playing!

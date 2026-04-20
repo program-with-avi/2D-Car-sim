@@ -3,7 +3,8 @@ This is a 2D car simulator where you can drift or just roam around the world (an
 The game has two track options and two car options, you can select anyone.  
 This game was entirely developed using [Python](https://www.python.org/) language.  
 ## Instalation⬇️  
-If you already have python installed go to Python library installation (pygame)  
+If you already have python installed go to Python library installation (pygame)
+You could also directly download the ```.exe``` file and run it directly(only for windows users)  
 ### Installing python  
 To install [Python](https://www.python.org) go to python's official website for download [https://www.python.org/downloads/](https://www.python.org/downloads/) and install it according to your OS. And make sure you installed version 3.11 or above.  
 ### Python library installation (pygame)  
@@ -13,6 +14,7 @@ After you have completed the [installation of Python](https://www.python.org/dow
 1. Duplicate this repository or just download the latest version folder  
 2. Now open the ```.py``` file and run it.  
 3. Congrats you have successfully launched the game!  
+4. You could also directly download the ```.exe``` file and run it directly(only for windows users)  
 ### Using the game  
 - Use keys ```W, S, D, A ``` to control the movement of the car.  
 - Use the key ```X``` to exit the game  

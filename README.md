@@ -20,9 +20,7 @@ After you have completed the [installation of Python](https://www.python.org/dow
 - Use the key ```X``` to exit the game  
 - Use the key ```esc``` to go back to track selection  
 ## Credits📃  
-This game's concept and program was developed by [@progarm-with-avi](https://github.com/program-with-avi/) (omgavig@gmail.com) and [@advedyt](https://github.com/advedyt)  
-Game concept: @tanushpillai123  
-Graphics by @evillarybean aka. sree  
+This game's concept and program was developed by [@progarm-with-avi](https://github.com/program-with-avi/) (omgavig@gmail.com)
 ## Notes📓  
 > [!NOTE]
 >```This game is still under development``` feel free to give any suggestions.  

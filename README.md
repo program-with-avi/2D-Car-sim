@@ -31,6 +31,6 @@ This game's concept and program was developed by [@progarm-with-avi](https://git
 > [!NOTE]
 >```This game is still under development``` feel free to give any suggestions.  
 > You can use this repository as template to make your own improved version.  
-> Not every version has the same features discussed above.
+> Not every version has the same features discussed above.  
 > Installing Python and installing pygame is completely optional.  
 Thank you for playing!
